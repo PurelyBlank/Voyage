@@ -4,8 +4,11 @@
 Current commands implemented into the discord bot for use
 
 #### Admin Commands
+
 `.kick` kicks the member from the server <br />
-        format: **.kick `member` {specify a reason (not required)}** <br />
+```
+    format: **.kick `member` {specify a reason (not required)}** <br />
+```
 `.ban` bans the specified member from the server until unbanned <br />
         format: **.ban `member` {specify a reason (not required)}** <br />
 `.unban` unbans the specified member from the server <br />
