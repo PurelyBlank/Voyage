@@ -31,9 +31,6 @@ async def load_cog():
                 print(f"Failed to load {filename[:-3]}") 
                 # prints out on terminal that the cog file has not been loaded correctly
 
-
-BOT_KEY = "REDACTED" 
-
 if __name__ == '__main__':
     asyncio.run(load_cog())
     client.run(BOT_KEY)
