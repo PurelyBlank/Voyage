@@ -1,2 +1,2 @@
 *.env
-/Lavalink/
+*.log
