@@ -1,8 +1,10 @@
 import asyncio
+import key
 import os
 
 import discord
 from discord.ext import commands
+import wavelink
 
 
 intents = discord.Intents.all()
@@ -15,10 +17,12 @@ async def load(ctx, extension):
     client.load_extension(f'cogs.{extension}')
     await ctx.send("Loaded Cog")
 
+
 @client.command()
 async def unload(ctx, extension):
     client.unload_extension(f'cogs.{extension}')
     await ctx.send("Unloaded Cog")
+
 
 async def load_cog():
     for filename in os.listdir('./cogs'):
@@ -31,6 +35,7 @@ async def load_cog():
                 print(f"Failed to load {filename[:-3]}") 
                 # prints out on terminal that the cog file has not been loaded correctly
 
+
 if __name__ == '__main__':
     asyncio.run(load_cog())
-    client.run(BOT_KEY)
+    client.run(key.BOT_KEY)

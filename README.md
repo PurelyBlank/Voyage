@@ -18,8 +18,5 @@ Current commands implemented into the discord bot for use
         &emsp; *Format*: **.clear {amount}** (default set to 1 including the clear message itself) <br />
 
 
-#### Music Commands
-
-
 #### Test Commands
 `.ping` sends the delay before a transfer of data begins following an instruction for its transfer.
